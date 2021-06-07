@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CIS 2336 Assignment 01 Fall 2020</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="Picture">
+				<img src="Picture.png">
+			</div>
+			<ul>
+				<li><a href="https://uh.edu/">Home</a></li>
+				<li><a href="https://www.uh.edu/academics">Academics</a></li>
+				<li><a href="https://uh.edu/admissions/">Admissions</a></li>
+				<li><a href="https://uh.edu/athletics/">Athletics</a></li>
+				<li><a href="https://uh.edu/news-events/">News</a></li>
+				<li><p style="color: white" href="#">Name: Andrew Nguyen</p></li>
+			</ul>			
+		</div>  
+		<div class="title">
+			<h1>University of Houston</h1>
+		</div>
+
+		<div class="button">
+			<a class="btn" onclick="myFunction()">Main Page</a>
+			<a href="https://uh.edu/infotech/services/accounts/email/" class="btn">Email</a>
+			<script>
+				function myFunction() {
+  					var x = document.getElementById("website");
+					if (x.style.display === "none") {
+					   x.style.display = "block";
+					   document.querySelector('#website').scrollIntoView({
+              			behavior: 'smooth' 
+            			});
+					 } else {
+					    x.style.display = "none";
+					 }
+				} 
+			</script>
+		</div>
+	</header>
+
+    <iframe id="website" style="display:none" src="https://www.uh.edu/">
+     </iframe>
+
+<script>
+	  var x = document.getElementById("website");
+      x.width = window.innerWidth;
+      x.height = window.innerHeight;
+</script>
+
+<div>
+	<h2>University of Houston About</h2>
+	<p>Established in 1927, the University of Houston empowers students in their pursuit of learning, discovery, leadership and engagement. Located in a sprawling metropolis, our premier Tier One campus provides students with cutting-edge programs including undergraduate, graduate, doctoral, distance and continuing education studies. Ranked among the best colleges in America, UH is home to award-winning faculty, innovative research centers, alumni who have become international leaders and one of the most diverse student populations in the nation.
+	At the University of Houston, we prepare students to envision their future, emerge as leaders and launch careers that transform the world.</p>
+	<p>The mission of the University of Houston is to offer nationally competitive and internationally recognized opportunities for learning, discovery and engagement to a diverse population of students in a real-world setting.  The University of Houston offers a full range of degree programs at the baccalaureate, master's, doctoral and professional levels and pursues a broad agenda of research and creative activities.   As a knowledge resource to the public, the university builds partnerships with other educational institutions, community organizations, government agencies, and the private sector to serve the region and impact the world.</p>
+
+		<div>
+			<ol>
+				<p class="how">How to apply to University of Houston</p>
+				<li> Complete the University of Houston application for admission using either the Apply Texas Application or The Common Application. </li>
+				<li> Pay the nonrefundable $75 application fee ($90 for international students) with a credit card or debit card. Payment can be made in your myUH self-service portal or before submitting the admissions application. </li>
+				<li> If you are applying for admissions with a test score, have your ACT or SAT score(s) sent directly from the testing agency to us. Our code for ACT is 4236; SAT is 6870.
+				If you are applying for admissions without a test score, visit your myUH self-service portal to submit a resume and admissions essay.</li>
+				<li>Pick one of the following options to submit your most recent high school transcript information:</li>
+				</li>		
+			</ol>
+				<ul>
+					<li>Ask your school administrator to send your official transcript data electronically through an EDI (Electronic Data Interchange) system, e.g. TREx (for Texas institutions)</li>
+					<li>Self-report transcript information in your my.uh.edu self-service portal. You will see an option for it on your applicant to-do list.</li>
+				</ul>
+		</div>
+</div>
+</body>
+</html>
